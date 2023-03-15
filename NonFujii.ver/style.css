@@ -73,6 +73,8 @@ body {
 /*-------------
 font
 ---------------*/
+
+
 .fs88 {
   font-size: calc(8.8rem + ((1vw - 1.92rem) * 2.0833)); /*8.8～6.4rem*/
 }
@@ -127,6 +129,7 @@ font
 .fs18 {
   font-size: 1.6rem;
 }
+
 @media screen and (max-width: 768px) {
   body {
     font-size: 1.4rem;
@@ -215,7 +218,24 @@ column
 }
   
 }
-/*-----margin------*/ :root {
+/*-----margin------*/
+@media screen and (min-width: 1921px) {
+  :root {
+  --margin20: 20px;
+  --margin30: 30px;
+  --margin40: 40px;
+  --margin50: 50px;
+  --margin60: 60px;
+  --margin70: 70px;
+  --margin80: 80px;
+  --margin100: 100px;
+  --margin120: 120px;
+  --margin160: 160px;
+}
+}
+
+@media screen and (min-width: 768px)  and (max-width: 1920px){
+:root {
   --margin20: calc((20 / 1920) * 100vw);
   --margin30: calc((30 / 1920) * 100vw);
   --margin40: calc((40 / 1920) * 100vw);
@@ -226,6 +246,7 @@ column
   --margin100: calc((100 / 1920) * 100vw);
   --margin120: calc((120 / 1920) * 100vw);
   --margin160: calc((160 / 1920) * 100vw);
+}
 }
 @media screen and (max-width: 768px) {
   :root {
@@ -323,8 +344,8 @@ FV
   padding-bottom: var(--margin60);
 }
 #fv-area .fv_bg-red {
-  background: url("images/fv_bg_light.jpg") top right no-repeat, var(--red);
-  background-size: contain;
+  background: url("images/fv_bg_light.jpg") top center no-repeat, var(--red);
+  background-size: cover;
   padding-top: var(--margin40);
   padding-right: var(--margin40);
   padding-left: var(--margin40);
@@ -334,6 +355,8 @@ FV
 #fv-area div.fv_logo {
   display: flex;
   align-items: flex-end;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 #fv-area div.fv_logo img.logo_amd {
   max-width: 197px;
@@ -366,6 +389,8 @@ FV
 #fv-area div.right p.desc {
   margin-top: var(--margin80);
 }
+
+
 #fv-area div.right div.page-link {
   text-align: center;
   max-width: 600px;
@@ -411,6 +436,9 @@ FV
 /*----------------------------------------------------
 con1
 ------------------------------------------------------*/
+#con1 {
+  padding-top: var(--margin100);
+}
 #con1 h2 {
   display: flex;
   justify-content: center;
@@ -849,7 +877,6 @@ footer p{
   text-align: center;
   font-size: 1.2rem;
 }*/
-
 /*----------------------------------------------------
 20230314豊嶋追加
 ------------------------------------------------------*/
