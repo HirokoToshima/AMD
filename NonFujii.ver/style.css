@@ -890,6 +890,7 @@ header {
     width: 96%;
     margin: auto;
     position: relative;
+    max-width: 1500px;
 }
 header .inner {
     display: flex;
@@ -952,7 +953,7 @@ header nav {
   margin: 0 auto;
 }
 
-.f-nav-box{width: 87%; margin: 0 auto;}
+.f-nav-box{width: 87%; margin: 0 auto;max-width: 1500px;}
 .f-nav {display: flex;margin: 20px 0;list-style: none;}
 .f-nav a {color: #fff;font-size: 15px;}
 .f-nav li {margin-right: 15px;}
